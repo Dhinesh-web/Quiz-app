@@ -1,12 +1,49 @@
 {
-  "name": "quizapp",
+  "name": "Quizapp",
   "version": "1.0.0",
-  "description": "fun quiz questions",
+  "description": "Fun quiz questions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+    "start": "index.js"
   },
+  "keywords": [
+    "MEAN",
+    "stack"
+  ],
   "author": "Dhinesh",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "base64-img": "^1.0.4",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "cloudinary": "^1.22.0",
+    "connect-busboy": "0.0.2",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.2",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2",
+    "fs": "0.0.1-security",
+    "image-to-base64": "^2.1.0",
+    "jsonwebtoken": "^7.1.9",
+    "kraken": "^0.4.0",
+    "mongoose": "^5.7.0",
+    "mongoose-title-case": "*",
+    "mongoose-validator": "*",
+    "morgan": "^1.7.0",
+    "multer": "^1.4.2",
+    "nconf": "^0.10.0",
+    "node-localstorage": "^2.1.6",
+    "nodemailer": "^2.7.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^2.0.0",
+    "passport-twitter": "^1.0.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
 }

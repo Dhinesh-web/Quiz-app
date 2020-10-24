@@ -1,0 +1,176 @@
+
+<style>
+    #container {
+	background-color:#fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+    min-height: 480px;
+    
+}
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #FF416C;
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+</style>
+<!-- Main Section -->
+
+    <!-- Start of Container -->
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 align="center">LOGIN FORM</h1>
+                <div class="jumbotron text-center" ng-show="main.loading">
+                    <span class="glyphicon glyphicon-repeat spinner"></span>
+                    <p>Loading....</p>
+                </div>
+                <div class="row show-hide-message" ng-show="main.successMsg || main.errorMsg || facebook.errorMsg || twitter.errorMsg || google.errorMsg">
+                    <div ng-class="alert">{{ main.successMsg || main.errorMsg || facebook.errorMsg || twitter.errorMsg || google.errorMsg }}</div>&nbsp
+                    <a ng-show="main.expired || facebook.expired || google.expired || twitter.expired" href="/resend">
+                        <!-- Button to Resend an Activation Link -->
+                        <div align="center"><button type="button" class="btn btn-success">Resend Activation Link</button></div>
+                    </a>
+                </div>
+                <form name="sentMessage" id="contactForm" ng-submit="main.doLogin(loginData);" novalidate>
+                    <div class="row">
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Username Input -->
+                            <div class="form-group" align="center">
+                                <br>
+                                <label>Email-id</label>
+                                <input ng-disabled="main.disabled || facebook.disabled || twitter.disabled || google.disabled" class="form-control" type="text" name="email" placeholder="Email-id *" ng-model="main.loginData.email" autocomplete="off">
+                            </div>
+                            <!-- Password Input -->
+                            <div class="form-group" align="center">
+                                <label>Password</label>
+                                <input ng-disabled="main.disabled || facebook.disabled || twitter.disabled || google.disabled" class="form-control" type="password" name="password" placeholder="password *" ng-model="main.loginData.password">
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Side Textarea Box for Sample user -->
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-left">
+                            <div align="center">
+                                <button type="submit" ng-disabled="main.disabled || facebook.disabled || twitter.disabled || google.disabled" class="button-succes">LOGIN</button>
+                            </div>
+                            <div align="center">
+                                <a href="/resetpassword">Forgot Password?
+                                </a>
+                                OR
+                                <a href="/resetusername">Forgot Username?
+                                </a>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            
+                        <!-- </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- <div class="jumbotron text-center" ng-show="main.loading">
+            <span class="glyphicon glyphicon-repeat spinner"></span>
+            <p>Loading....</p>
+        </div>
+  
+        <div class="row show-hide-message" ng-show="main.successMsg || main.errorMsg || facebook.errorMsg || twitter.errorMsg || google.errorMsg">
+            <div ng-class="alert">{{ main.successMsg || main.errorMsg || facebook.errorMsg || twitter.errorMsg || google.errorMsg }}</div>&nbsp
+            <a ng-show="main.expired || facebook.expired || google.expired || twitter.expired" href="/resend">
+                
+                <button type="button" class="btn btn-success">Resend Activation Link</button>
+            </a>
+        </div> -->
+    </div>
+
+    </div>
+    <!-- End of Container -->
+</section>
+<!-- Main Section /-->

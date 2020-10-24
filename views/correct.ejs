@@ -1,0 +1,190 @@
+<html>
+  <head>
+      <style>
+.contact-form .form-field{
+    position:relative;
+    margin:12px 0;
+}
+.contact-form .input-text{
+    display:block;
+    width:100%;
+    height:36px;
+    border-width:0 0 2px 0;
+    border-color:#5543ca;
+    font-size:18px;
+    line-height:26px;
+    font-weight:400;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+.contact-form .input-text:focus+ .label,
+.contact-form .input-text.not-empty +.label{
+    transform:translateY(-11px);
+}
+
+.contact-form .input-text:focus{
+    outline:none;
+}
+.contact-form .label{
+    position:absolute;
+    left:5px;
+    bottom:18px;
+    font-size:18px;
+    line-height:26px;
+    font-weight: 400;
+    color:#5543ca;
+    cursor:text;
+    text-transform: capitalize;
+    transition:transform 0.2s ease-in-out;
+}
+.contact-form .lab{
+    left:20px;
+    bottom:11px;
+    font-size:18px;
+    line-height:26px;
+    font-weight: 400;
+    color:#5543ca;
+    text-transform: capitalize;
+    transition:transform 0.2s ease-in-out;
+}
+
+.lab12{
+  left:20px;
+  bottom:11px;
+  font-size:18px;
+  line-height:26px;
+  font-weight: 400;
+  color:#ca434a;
+  text-transform: capitalize;
+  transition:transform 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn{
+    display:inline-block;
+    background-image: linear-gradient(125deg,#a72879,#064497);
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size:16px;
+    padding:8px 16px;
+    border:none;
+    width:200px;
+    cursor: pointer;
+}
+
+     .bodyf {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+      }
+        .h1f {
+          color: #88B04B;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        .h1f1 {
+            color: #FF0000;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            margin-bottom: 10px;
+          }
+          .h1f2 {
+            color: #003cff;
+            font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+            font-weight: 900;
+            font-size: 40px;
+            margin-bottom: 10px;
+          }
+        .pf {
+          color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      .if {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .if1 {
+        color: #FF0000;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .if2 {
+        color: #003cff;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .cardf {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 8px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            height: 40;
+            cursor: pointer;
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65);
+            /* this is a green */
+        }
+        .button-error {
+          background: rgb(202, 60, 60);
+          /* this is a maroon */
+      }
+
+      .button-warning {
+          background: rgb(223, 117, 20);
+          /* this is an orange */
+      }
+
+      .button-secondary {
+          background: rgb(66, 184, 221);
+          /* this is a light blue */
+      }
+      </style>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  </head>
+    <body><div class="bodyf">
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="if">✓</i>
+      </div>
+      <div class="h1f">
+        <h1>Great</h1> 
+    </div>
+    <div class="pf">
+        <p class="pf">Your answer is correct.<br/></p>
+        <form action="/animalsquiz" method="GET">
+        <input class="button-success pure-button" type="submit" value="NEXT QUESTION">
+    </form>
+    </div>
+      </div>
+    </div>
+    </body>
+</html>

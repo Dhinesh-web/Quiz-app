@@ -1,0 +1,37 @@
+<body>
+    <!-- <h1>KYC VALIDATION FORM</h1> -->
+    <link href="app/views/pages/users/styling.css" rel="stylesheet"> 
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+    <section class="get_in_touch">
+        <h5 class="title">KYC VALIDATION FORM</h5>
+        <div class="container">
+            <div class="contact-form row">
+                <div class="form-field col-lg-3">
+                    <div class="lab">Name</div>
+                    <input id="name" class="input-text" type="text" name="nam">
+                </div>
+                <div class="form-field col-lg-3">
+                    <div class="lab">Aadhar Number</div>
+                    <input id="email" class="input-text" type="text" name="numb">
+                </div>
+                <div class="form-field col-lg-12">
+                    <div class="lab">DOB</div>
+                    <input id="company" class="input-text" type="date" name="dob">
+                </div>
+                <div class="form-field col-lg-12">
+                    <div class="lab">Address</div>
+                    <input id="phone" class="input-text" type="text" name="address">
+                </div>
+                <div class="form-field col-lg-12">
+                    <div class="lab">Upload KYC Document</div><br>
+                    <input id="message" class="custom-file-input" type="file" name="picture" >
+
+                </div>
+                <div class="form-field col-lg-12">
+                    <input class="submit-btn" type="submit" value="submit" name="">
+                </div>
+            </div>
+        </div>
+    </section>
+    </form>
+</body>

@@ -1,0 +1,115 @@
+<!-- <body>
+    <h1>GOLD LOAN FORM</h1>
+    <form action="/loan" method="POST" enctype="multipart/form-data">
+        <br>
+        Enter your KN Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f" required><br>
+        <br>Choose a gold Type:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="cars" name="f1" required>
+  <option value="8_carat">8 carat</option>
+  <option value="16_carat">16 carat</option>
+  <option value="24_carat">24 carat</option>
+</select>
+       <br>
+        <br>Weight(in grams):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f2" required><br>
+        <br>Email id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="m" required><br>
+        <br>Place bought from:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f3" required><br>
+        <br>Jewellers Name & address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f4" required><br>
+        <h3>Bank Details</h3>
+        <br>Account Holder Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f5" required><br>
+        <br>Choose a Account Type:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="cars1" name="f6" required>
+  <option value="Savings">Savings Account</option>
+  <option value="Joint">Joint Account</option>
+  <option value="Current">Current Account</option>
+</select><br>
+        <br>Account Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f7" required><br>
+        <br>IFSC Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f8" required><br>
+        <br>Bank Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f9" required><br>
+        <br>Branch Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="f10" required><br>
+        <br>Upload Images of Jewel<br><br>
+        <input type="file" name="pic"/><br>
+        <input type="checkbox" name="vehicle1" value="Bike" required>
+        <label for="vehicle1">I hereby accept all the terms and Conditions of star-finance.</label><br> 
+        <br><input type="submit" value="Upload" required/>
+</body>  -->
+
+<body>
+  <link href="app/views/pages/users/styling.css" rel="stylesheet"> 
+  <form action="/loan" method="POST" enctype="multipart/form-data">
+  <section class="get_in_touch">
+      <h5 class="title">GOLD LOAN FORM</h5>
+      <div class="container">
+          <div class="contact-form row">
+              <div class="form-field col-lg-6">
+                <div class="lab">KN Number</div>
+                  <input id="name" class="input-text" type="text" name="f" required>
+              </div>
+              <div class="form-field col-lg-6">
+                <div class="lab">Weight(in grams)</div>
+                  <input id="email" class="input-text" type="text" name="f2">
+              </div>
+              <div class="form-field col-lg-6">
+                <div class="lab">Gold Type</div>
+                <select id="name" class="input-text" name="f1" required>
+                  <option value="8_carat">8 carat</option>
+                  <option value="16_carat">16 carat</option>
+                  <option value="24_carat">24 carat</option>
+                </select>
+            </div>
+              <div class="form-field col-lg-6">
+                  <div class="lab">Email id</div>
+                  <input id="company" class="input-text" type="text" name="m">
+              </div>
+              <div class="form-field col-lg-12">
+                <div class="lab">Place bought from</div>
+                  <input id="phone" class="input-text" type="text" name="f3">
+              </div>
+              <div class="form-field col-lg-12">
+                <div class="lab">Jewellers Name & address</div>
+                <input id="name" class="input-text" type="text" name="f4">
+            </div>
+            <h5 class="title">BANK DETAILS</h5>
+            <div class="form-field col-lg-6">
+              <div class="lab">Account Holder Name</div>
+                <input id="email" class="input-text" type="text" name="f5">
+            </div>
+            <div class="form-field col-lg-6">
+              <div class="lab">Account Type</div>
+              <select id="cars1" class="input-text" name="f6" required>
+                <option value="Savings">Savings Account</option>
+                <option value="Joint">Joint Account</option>
+                <option value="Current">Current Account</option>
+              </select>
+          </div>
+          <div class="form-field col-lg-6">
+            <div class="lab">Account Number</div>
+            <input id="company" class="input-text" type="text" name="f7">
+        </div>
+            <div class="form-field col-lg-6">
+                <div class="lab">IFSC Code</div>
+                <input id="phone" class="input-text" type="text" name="f8">
+            </div>
+            <div class="form-field col-lg-6">
+              <div class="lab">Bank Name</div>
+              <input id="email" class="input-text" type="text" name="f9">
+          </div>
+          <div class="form-field col-lg-6">
+              <div class="lab">Branch Name</div>
+              <input id="company" class="input-text" type="text" name="f10">
+          </div>
+              <div class="form-field col-lg-12">
+                  <div class="lab">Upload Images of Jewel</div><br>
+                  <input id="message" class="input-text" type="file" name="pic" >
+              </div>
+              <div class="form-field col-lg-12">
+                <input type="checkbox" name="vehicle1" value="Bike" required>
+                <label for="vehicle1">I hereby accept all the terms and Conditions of star-finance.</label><br> 
+            </div>
+              <div class="form-field col-lg-12">
+                  <input class="submit-btn" type="submit" value="submit" name="">
+              </div>
+          </div>
+      </div>
+  </section>
+  </form>
+</body>
